@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/index.html#about -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人部落格</title>
+    <style>
+        body {
+            font-size: 16px; /* 預設全局字體大小 */
+            font-family: Arial, sans-serif;
+        } 
+        
+        {background-color: #f0f8ff; /* 整體頁面為淡藍色 */
+            font-family: Arial, sans-serif;}
+        
+        p {
+            background-color: rgba(0, 0, 255, 0.1); /* 淺藍色透明背景 */
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+        .flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .line-height {
+            height: 100px;
+            line-height: 100px; /* 單行垂直置中 */
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <link rel="stylesheet" href="./個人部落格_files/style.css">
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head><body>
+
+
+    <p class="line-height">歡迎來到我的個人部落格</p>
+    <header>
+        <p>分享我的生活與學習點滴</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html#about">關於我</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#blog">部落格文章</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#contact">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>關於我</h2>
+            <img src="./個人部落格_files/1.jpg" alt="我家寵物" width="165" height="165">
+            <p>你好！我是 [小如]，這是一個簡單的部落格範例。</p>
+        </section>
+
+        <section id="blog">
+            <h2>最新文章</h2>
+            <article>
+                <h3>我的第一篇文章</h3>
+                <img src="./個人部落格_files/2.jpg" alt="這是我" width="165" height="165">
+                <p>這是一段簡短的經歷描述...</p>
+                <button onclick="alert(&#39;從大一到大四，我學到了許多寶貴的技能與知識，涵蓋故事分鏡、影像處理、專案管理以及後期特效等領域。在這四年的學習旅程中，每一門課程與每一項專案都帶來不同的挑戰與成長機會。剛開始接觸故事分鏡時，我對如何將抽象概念具象化為清晰的畫面感到陌生，但隨著不斷練習，我逐漸掌握了畫面表達與情節規劃的技巧。其中，讓我印象最深刻且最喜歡的是後製特效。從小我就對影像的細節處理與視覺效果產生濃厚興趣，能在課程中學習相關技術，讓我感到既興奮又充滿動力。每當我在後期階段加入特效，並看到平凡的畫面被轉化為充滿戲劇張力的作品時，內心總會湧起滿足感與成就感。這份熱愛也驅使我更加投入於練習，力求創造更精緻的視覺效果。儘管學習過程中有過挫折，但每一次挑戰都讓我獲得滿滿的成長與啟發。這段旅程讓我更有信心去面對未來的挑戰，也對我的專業方向更加篤定。&#39;)">閱讀更多</button>
+            </article>
+            <article>
+                <h3>我的第二篇文章</h3>
+                <img src="./個人部落格_files/3.jpg" alt="文章封面" width="165" height="165">
+                <p>這是一段技能的簡短描述...</p>
+                <button onclick="alert(&#39;目前我已取得兩張國際證照，分別是 Photoshop 和 Illustrator，以及 ITE 的專業證照。這些證照不僅展現了我在影像編輯與設計軟體上的專業技能，也代表了我對視覺創作與數位設計的熱忱。通過國際證照的學習與考試，我深入掌握了 Photoshop 的影像處理技巧與 Illustrator 的矢量繪圖能力，能靈活應用於設計工作中。而 ITE 證照則進一步強化了我在相關技術領域的基礎與實務操作，讓我對未來的專業發展更加充滿信心&#39;)">閱讀更多</button>
+            </article>
+            <article>
+                <h3>我的第三篇文章</h3>
+                <img src="./個人部落格_files/4.jpg" alt="興趣" width="165" height="165">
+                <p>這是一段興趣的簡短描述...</p>
+                <button onclick="alert(&#39;我的興趣涵蓋了多樣的面向，包括看動漫、跳 K-pop 舞蹈、追星以及追 Vtuber。看動漫是我放鬆心情和尋找靈感的重要方式，透過豐富多樣的故事情節和精美的畫面，我總能感受到不同文化與價值觀的碰撞。跳 K-pop 舞蹈則是我的另一個熱愛，隨著音樂的節奏舞動，不僅能釋放壓力，還能增強自信與身體協調性。追星與追 Vtuber也是我生活中的一部分。追隨偶像和 Vtuber 不僅讓我感受到他們努力追夢的能量，也為日常生活增添了許多樂趣與期待。透過觀看直播或參與粉絲活動，我能和志同道合的人交流，增進彼此的情感連結。這些興趣讓我的生活更加充實，也提供了源源不絕的快樂與啟發。&#39;)">閱讀更多</button>
+        </article></section>
+
+        <section id="contact">
+            <h2>聯絡我</h2>
+            <p>有任何問題歡迎聯絡我！</p>
+            <button onclick="alert(&#39;感謝你的聯絡！&#39;)">立即聯絡</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 我的部落格. 保留所有權利。</p>
+    </footer>
+<!-- Code injected--></body></html>
